@@ -48,7 +48,7 @@ Nous avons réalisé :
 
 ## Les low-tech
 
-Au travers de ses actions, l'association cultive une **philosophie low-tech** ([Low Tech Lab](https://lowtechlab.org/fr).  
+Au travers de ses actions, l'association cultive une **philosophie low-tech** ([Low Tech Lab](https://lowtechlab.org/fr)).  
 Cette philosophie peut se résumer par :
 
 > La réponse la plus sobre possible à un besoin localement exprimé.
