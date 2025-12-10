@@ -5,7 +5,7 @@ title: "L'association"
 
 # Recycle.mjb
 
-Recycle.mjb est une association lancée en 2017 par deux amis (cf lien Mr Mondialisation).  
+Recycle.mjb est une association lancée en 2017 par deux amis ([Article sur Mr Mondialisation](https://mrmondialisation.org/ces-deux-jeunes-redonnent-vie-aux-objets-jetes-a-la-rue/)).  
 Depuis sa création, l'association a vécu de nombreuses périodes différentes et ses membres principaux ont fini leurs cursus d'étude.  
 Nous sommes maintenant membre de Porteous et avons notre atelier sur ce lieu emblématique du secteur industriel et culturel local.
 
@@ -48,7 +48,7 @@ Nous avons réalisé :
 
 ## Les low-tech
 
-Au travers de ses actions, l'association cultive une **philosophie low-tech** (cf. Low Tech Lab).  
+Au travers de ses actions, l'association cultive une **philosophie low-tech** ([Low Tech Lab](https://lowtechlab.org/fr).  
 Cette philosophie peut se résumer par :
 
 > La réponse la plus sobre possible à un besoin localement exprimé.
@@ -67,4 +67,4 @@ C'est aussi grâce à ces compétences que nous nous autofinançons au travers d
 - La réalisation de petits usinages sur nos machines-outils CNC
 - Des mandats de conception mécanique
 
-Notre association anime annuellement une semaine de chantier participatif à Porteous. (cf liens événement 2025)
+Notre association anime annuellement une semaine de chantier participatif à Porteous.
