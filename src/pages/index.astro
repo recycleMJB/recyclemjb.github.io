@@ -186,7 +186,7 @@ const images = Object.entries(imageModules).map(([path, src]) => ({
    .carousel {
     position: relative;
     width: 100%;
-    max-width: 900px;
+    max-width: 1100px;
     margin: 2rem auto;
     overflow: hidden;
     border-radius: 1rem;
@@ -194,7 +194,7 @@ const images = Object.entries(imageModules).map(([path, src]) => ({
 
   .carousel-track {
     position: relative;
-    height: 420px;
+    height: 620px;
   }
 
   .carousel-image {
@@ -202,7 +202,7 @@ const images = Object.entries(imageModules).map(([path, src]) => ({
     inset: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
     opacity: 0;
     transition: opacity 0.4s ease;
   }
@@ -242,18 +242,45 @@ const images = Object.entries(imageModules).map(([path, src]) => ({
 </style>
 
 <script>
-  const images = document.querySelectorAll(".carousel-image");
-  const prev = document.querySelector(".prev");
-  const next = document.querySelector(".next");
+  window.addEventListener("DOMContentLoaded", () => {
+    const images = document.querySelectorAll(".carousel-image");
+    const prev = document.querySelector(".prev");
+    const next = document.querySelector(".next");
 
-  let index = 0;
+    let index = 0;
+    let autoSlide: number;
 
-  function showImage(newIndex: number) {
-    images[index].classList.remove("active");
-    index = (newIndex + images.length) % images.length;
-    images[index].classList.add("active");
-  }
+    if (images.length === 0) return;
 
-  prev?.addEventListener("click", () => showImage(index - 1));
-  next?.addEventListener("click", () => showImage(index + 1));
+    function showImage(newIndex: number) {
+      images[index]?.classList.remove("active");
+
+      index = (newIndex + images.length) % images.length;
+
+      images[index]?.classList.add("active");
+    }
+
+    function startAutoSlide() {
+      autoSlide = window.setInterval(() => {
+        showImage(index + 1);
+      }, 3000); // 3 secondes
+    }
+
+    function resetAutoSlide() {
+      clearInterval(autoSlide);
+      startAutoSlide();
+    }
+
+    prev?.addEventListener("click", () => {
+      showImage(index - 1);
+      resetAutoSlide();
+    });
+
+    next?.addEventListener("click", () => {
+      showImage(index + 1);
+      resetAutoSlide();
+    });
+
+    startAutoSlide();
+  });
 </script>
